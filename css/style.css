@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* --------------------------------
- * base
- * -------------------------------- */
+* base
+* -------------------------------- */
 html {
   font-size: 62.5%;
 }
@@ -11,7 +11,7 @@ body {
   color: #333;
   text-align: center;
   font-size: 1.4rem;
-  font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 ul {
@@ -72,8 +72,8 @@ ul {
 }
 
 /* --------------------------------
- * header
- * -------------------------------- */
+* header
+* -------------------------------- */
 .header {
   height: 80px;
   border-bottom: 1px solid #888;
@@ -143,21 +143,60 @@ ul {
 }
 
 /* --------------------------------
- * about
- * -------------------------------- */
+* about
+* -------------------------------- */
 .about {
   background-color: #fff;
   color: #333;
 }
 
-.about-text {
-  margin: 30px 0;
+.about .content-left {
+  position: relative;
+}
+
+.about .content-left .photo {
+  position: absolute;
+  left: -20px;
+  top: 145px;
+  text-align: center;
+}
+
+.about .content-left .photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -moz-transform: rotateZ(90deg);
+  -webkit-transform: rotateZ(90deg);
+  -o-transform: rotateZ(90deg);
+  -ms-transform: rotateZ(90deg);
+}
+
+.about .content-left .photo .sns-icons {
+  margin: 0 auto;
+}
+
+.about .content-left .photo .sns-icons a {
+  color: black;
+}
+
+.about .content-left .photo .sns-icons a .icon {
+  font-size: 4rem;
+}
+
+.about-content .about-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.about-content .about-text {
+  margin: 10px 0;
+  font-size: 2rem;
   line-height: 2.5;
 }
 
 /* --------------------------------
- * works
- * -------------------------------- */
+* works
+* -------------------------------- */
 .works {
   background-color: #eee;
 }
@@ -211,8 +250,8 @@ ul {
 }
 
 /* --------------------------------
- * resume
- * -------------------------------- */
+* resume
+* -------------------------------- */
 .resume {
   background-color: #fff;
   color: #333;
@@ -251,8 +290,8 @@ ul {
 }
 
 /* --------------------------------
- * contact
- * -------------------------------- */
+* contact
+* -------------------------------- */
 .contact {
   background: #eee;
 }
@@ -301,16 +340,16 @@ ul {
 }
 
 /* --------------------------------
- * footer
- * -------------------------------- */
+* footer
+* -------------------------------- */
 .footer {
   padding: 12px 0;
   font-size: 1.3rem;
 }
 
 /* --------------------------------
- * smart phone
- * -------------------------------- */
+* smart phone
+* -------------------------------- */
 @media (max-width: 1024px) {
   body {
     background-image: none;
@@ -393,42 +432,42 @@ ul {
 }
 
 /* --------------------------------
- * challenge
- *
- * 31行目からの.heading::before, .heading::afterの
- * スタイルをコメントアウトしてから適用してください。
- * -------------------------------- */
+* challenge
+*
+* 31行目からの.heading::before, .heading::afterの
+* スタイルをコメントアウトしてから適用してください。
+* -------------------------------- */
 /*
 .heading::before,
 .heading::after {
-  content: '';
-  display: inline-block;
-  width: 0.3em;
-  height: 0.3em;
-  margin: 0 0.5em;
-  border: 1px solid;
-  vertical-align: 0.2em;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+content: '';
+display: inline-block;
+width: 0.3em;
+height: 0.3em;
+margin: 0 0.5em;
+border: 1px solid;
+vertical-align: 0.2em;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
 }
 .work-box {
-  overflow: hidden;
+overflow: hidden;
 }
 .work-image {
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
+transition: -webkit-transform 0.5s ease-in-out;
+transition: transform 0.5s ease-in-out;
 }
 .work-box:nth-child(odd) .work-image {
-  -webkit-transform-origin: top center;
-  transform-origin: top center;
+-webkit-transform-origin: top center;
+transform-origin: top center;
 }
 .work-box:nth-child(even) .work-image {
-  -webkit-transform-origin: bottom center;
-  transform-origin: bottom center;
+-webkit-transform-origin: bottom center;
+transform-origin: bottom center;
 }
 .work-box:hover .work-image {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
 }
 */
