@@ -19,5 +19,5 @@ plugins:
 gems:
   - jekyll-font-awesome-sass
 
-  font-awesome:
-    assets: true
+font-awesome:
+  assets: true
