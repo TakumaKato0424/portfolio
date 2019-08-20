@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    <title>シングルページレイアウト</title>
+    <title>Takuma Kato</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -13,111 +13,134 @@
 
 <body>
     <header class="header">
-        <h2 class="header-logo">TAKUMA KATO</h2>
-        <nav class="navbar">
-            <ul class="navbar-items">
-                <li class="item">
-                    <a class="item-link">about</a>
-                </li>
-                <li class="item">
-                    <a class="item-link">about</a>
-                </li>
-                <li class="item">
-                    <a class="item-link">about</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="buttons">
-            <a class="button" href="#about">LEARN MORE</a>
-            <a class="button button-showy" href="#contact">SEND MESSAGE</a>
+        <div class="container  clearfix">
+            <h2 class="header-logo">TAKUMA KATO</h2>
+            <nav class="navbar">
+                <ul class="navbar-items">
+                    <li class="item">
+                        <a class="item-link" href="#about">about</a>
+                    </li>
+                    <li class="item">
+                        <a class="item-link" href="#works">works</a>
+                    </li>
+                    <li class="item">
+                        <a class="item-link" href="#resume">resume</a>
+                    </li>
+                    <li class="item">
+                        <a class="item-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <section class="about" id="about">
-        <h2 class="heading">ABOUT</h2>
-        <p class="about-text">
-            加藤拓磨<br>1990.04.24
-        </p>
-        <p class="about-text">
-            テスト
-        </p>
+        <div class="container  clearfix">
+            <div class="content-left">
+                <h2 class="heading">ABOUT</h2>
+            </div>
+            <div class="content-right">
+                <p class="about-text">
+                    加藤拓磨<br>1990.04.24
+                </p>
+                <p class="about-text">
+                    テスト
+                </p>
+            </div>
+        </div>
     </section>
-    <section class="works">
-        <h2 class="heading">WORKS</h2>
-        <div class="works-wrapper">
-            <div class="work-box tree">
-                <img class="work-image" src="images/chatspace.png" alt="制作事例1">
-                <div class="work-description">
-                    <div class="work-description-inner">
-                        <p class="work-text">
-                            チャットスペース<br> 簡単な説明が入ります。
-                            <br> 使用ツール：XXX, XXX, XXX<br>
-                            <a href="#" class="button button-ghost">READ MORE</a>
-                        </p>
-                    </div>
-                </div>
+    <section class="works" id="works">
+        <div class="container clearfix">
+            <div class="content-left">
+                <h2 class="heading">WORKS</h2>
             </div>
-            <div class="work-box building">
-                <img class="work-image" src="images/freemarket.png" alt="制作事例2">
-                <div class="work-description">
-                    <div class="work-description-inner">
-                        <p class="work-text">
-                            フリーマーケットアプリケーション<br> 簡単な説明が入ります。
-                            <br> 使用ツール：XXX, XXX, XXX<br>
-                            <a href="#" class="button button-ghost">READ MORE</a>
-                        </p>
+            <div class="content-right">
+                <div class="works-wrapper">
+                    <div class="work-box tree">
+                        <img class="work-image" src="images/chatspace.png" alt="制作事例1">
+                        <div class="work-description">
+                            <div class="work-description-inner">
+                                <p class="work-text">
+                                    チャットスペース<br> 簡単な説明が入ります。
+                                    <br> 使用ツール：XXX, XXX, XXX<br>
+                                    <a href="#" class="button button-ghost">READ MORE</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="work-box lake">
-                <img class="work-image" src="images/moneytech.png" alt="制作事例3">
-                <div class="work-description">
-                    <div class="work-description-inner">
-                        <p class="work-text">
-                            Comming soon...<br> 簡単な説明が入ります。
-                            <br> 使用ツール：XXX, XXX, XXX<br>
-                            <a href="#" class="button button-ghost">READ MORE</a>
-                        </p>
+                    <div class="work-box building">
+                        <img class="work-image" src="images/freemarket.png" alt="制作事例2">
+                        <div class="work-description">
+                            <div class="work-description-inner">
+                                <p class="work-text">
+                                    フリーマーケットアプリケーション<br> 簡単な説明が入ります。
+                                    <br> 使用ツール：XXX, XXX, XXX<br>
+                                    <a href="#" class="button button-ghost">READ MORE</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-box lake">
+                        <img class="work-image" src="images/moneytech.png" alt="制作事例3">
+                        <div class="work-description">
+                            <div class="work-description-inner">
+                                <p class="work-text">
+                                    Comming soon...<br> 簡単な説明が入ります。
+                                    <br> 使用ツール：XXX, XXX, XXX<br>
+                                    <a href="#" class="button button-ghost">READ MORE</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="skills">
-        <h2 class="heading">RESUME</h2>
-        <div class="skills-wrapper">
-            <div class="skill-box">
-                <i class="skill-icon fa fa-lightbulb-o"></i>
-                <div class="skill-title">IDEA</div>
-                <p class="skill-text">
-                    何かを考えることが好きです。<br> 新しいことを思いついては試しています。
-                    <br> ディレクションの経験もあります。
-                </p>
+    <section class="resume" id="resume">
+        <div class="container  clearfix">
+            <div class="content-left">
+                <h2 class="heading">RESUME</h2>
             </div>
-            <div class="skill-box">
-                <i class="skill-icon fa fa-paint-brush"></i>
-                <div class="skill-title">DESIGN</div>
-                <p class="skill-text">
-                    見た目の綺麗さだけじゃなくて、<br> 使いやすさ、情報の伝わりやすさなど、
-                    <br> その先まで考えることを意識しています。
-                </p>
-            </div>
-            <div class="skill-box">
-                <i class="skill-icon fa fa-code"></i>
-                <div class="skill-title">CODING</div>
-                <p class="skill-text">
-                    HTML/CSSコーディングも行います。<br> 正しく美しいマークアップと、
-                    <br> 今後の変更への強さを考慮しています。
-                </p>
+            <div class="content-right">
+                <div class="skills-wrapper">
+                    <div class="skill-box">
+                        <i class="skill-icon fa fa-lightbulb-o"></i>
+                        <div class="skill-title">IDEA</div>
+                        <p class="skill-text">
+                            何かを考えることが好きです。<br> 新しいことを思いついては試しています。
+                            <br> ディレクションの経験もあります。
+                        </p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="skill-icon fa fa-paint-brush"></i>
+                        <div class="skill-title">DESIGN</div>
+                        <p class="skill-text">
+                            見た目の綺麗さだけじゃなくて、<br> 使いやすさ、情報の伝わりやすさなど、
+                            <br> その先まで考えることを意識しています。
+                        </p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="skill-icon fa fa-code"></i>
+                        <div class="skill-title">CODING</div>
+                        <p class="skill-text">
+                            HTML/CSSコーディングも行います。<br> 正しく美しいマークアップと、
+                            <br> 今後の変更への強さを考慮しています。
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="contact" id="contact">
-        <h2 class="heading">CONTACT</h2>
-        <form class="contact-form" action="https://formspree.io/arutonico2525@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="NAME">
-            <textarea name="message" placeholder="MESSAGE"></textarea>
-            <input type="submit" value="SEND">
-        </form>
+        <div class="container  clearfix">
+            <div class="content-left">
+                <h2 class="heading">CONTACT</h2>
+            </div>
+            <form class="contact-form" action="https://formspree.io/arutonico2525@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="NAME">
+                <textarea name="message" placeholder="MESSAGE"></textarea>
+                <input type="submit" value="SEND">
+            </form>
+        </div>
     </section>
     <footer class="footer">
     </footer>
