@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* --------------------------------
 * base
 * -------------------------------- */
@@ -56,13 +55,13 @@ ul {
 
 .content-left {
   float: left;
-  width: 30%;
+  width: 23%;
   text-align: left;
 }
 
 .content-right {
   float: right;
-  width: 70%;
+  width: 77%;
 }
 
 .clearfix::after {
@@ -90,11 +89,12 @@ ul {
 .header .container .navbar {
   float: right;
   margin-top: 15px;
-  margin-right: 100px;
+  margin-right: 50px;
 }
 
 .header .container .navbar-items .item {
-  margin-right: 10px;
+  font-size: 1.5rem;
+  margin-right: 15px;
   float: left;
 }
 
@@ -109,37 +109,6 @@ ul {
 
 .header .container .navbar-items .item-link:visited {
   color: #333;
-}
-
-.header .site-title-sub {
-  margin: 0 0 30px;
-  letter-spacing: 1px;
-  font-size: 2.2rem;
-}
-
-.header .site-title-sub::before, .header .site-title-sub::after {
-  content: '';
-  display: inline-block;
-  width: 140px;
-  height: 2px;
-  margin: 0 30px;
-  background-color: #fff;
-  vertical-align: middle;
-}
-
-.header .site-title {
-  margin: 50px 0 40px;
-  font-size: 7.6rem;
-}
-
-.header .site-description {
-  margin-bottom: 50px;
-  color: #888;
-  font-size: 1.6rem;
-}
-
-.buttons .button {
-  margin: 10px;
 }
 
 /* --------------------------------
@@ -164,6 +133,7 @@ ul {
 .about .content-left .photo img {
   width: 200px;
   height: 200px;
+  object-fit: cover;
   border-radius: 50%;
   -moz-transform: rotateZ(90deg);
   -webkit-transform: rotateZ(90deg);
@@ -206,6 +176,8 @@ ul {
   width: 100%;
   margin-top: 60px;
   table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 20px;
 }
 
 .works-wrapper .work-box {
@@ -215,7 +187,9 @@ ul {
 
 .works-wrapper .work-box .work-image {
   display: block;
+  object-fit: cover;
   width: 100%;
+  height: 200px;
   margin: 0 0 60%;
 }
 
@@ -253,40 +227,19 @@ ul {
 * resume
 * -------------------------------- */
 .resume {
+  margin: 10px 0;
   background-color: #fff;
   color: #333;
 }
 
-.skills-wrapper {
-  display: table;
-  width: 80%;
-  margin: 50px auto 0;
-  table-layout: fixed;
+.resume .job-title {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-.skill-box {
-  display: table-cell;
-}
-
-.skill-icon {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 30px;
-  border: 4px solid;
-  border-radius: 50%;
-  color: #f1b400;
-  font-size: 8rem;
-  line-height: 142px;
-}
-
-.skill-title {
-  margin: 0 20px 20px;
+.resume .job-description {
   font-size: 2rem;
-}
-
-.skill-text {
-  margin: 0 20px;
-  line-height: 2;
+  line-height: 2.5;
 }
 
 /* --------------------------------
@@ -297,7 +250,7 @@ ul {
 }
 
 .contact-form {
-  width: 50%;
+  width: 70%;
   margin: 50px auto 0;
 }
 
@@ -308,10 +261,10 @@ ul {
   margin-bottom: 10px;
   padding: 15px;
   outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(51, 51, 51, 0.4);
   border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #333;
 }
 
 .contact-form input[type=text]:focus,
@@ -328,15 +281,15 @@ ul {
   width: 200px;
   margin: 40px auto 0;
   padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(51, 51, 51, 0.4);
   border-radius: 5px;
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(51, 51, 51, 0.6);
   cursor: pointer;
 }
 
 .contact-form input[type=submit]:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* --------------------------------
@@ -430,44 +383,3 @@ ul {
     width: 80%;
   }
 }
-
-/* --------------------------------
-* challenge
-*
-* 31行目からの.heading::before, .heading::afterの
-* スタイルをコメントアウトしてから適用してください。
-* -------------------------------- */
-/*
-.heading::before,
-.heading::after {
-content: '';
-display: inline-block;
-width: 0.3em;
-height: 0.3em;
-margin: 0 0.5em;
-border: 1px solid;
-vertical-align: 0.2em;
--webkit-transform: rotate(45deg);
--ms-transform: rotate(45deg);
-transform: rotate(45deg);
-}
-.work-box {
-overflow: hidden;
-}
-.work-image {
-transition: -webkit-transform 0.5s ease-in-out;
-transition: transform 0.5s ease-in-out;
-}
-.work-box:nth-child(odd) .work-image {
--webkit-transform-origin: top center;
-transform-origin: top center;
-}
-.work-box:nth-child(even) .work-image {
--webkit-transform-origin: bottom center;
-transform-origin: bottom center;
-}
-.work-box:hover .work-image {
--webkit-transform: scale(1.1);
-transform: scale(1.1);
-}
-*/
