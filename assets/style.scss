@@ -1,6 +1,7 @@
 @charset "UTF-8";
 $fa-font-path: "fonts/font-awesome/";
-@import 'font-awesome';
+@import "font-awesome-compass";
+@import "font-awesome";
 $background-gray: #eee;
 $font-color: #333;
 
